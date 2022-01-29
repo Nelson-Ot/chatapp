@@ -97,3 +97,47 @@ body{
 .form .link a:hover{
     text-decoration: underline;
 }
+/* users area css code */
+.users{
+    padding: 25px 34px;
+}
+.users header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #b4b1b1;
+}
+.wrapper img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+.users header .content{
+    display: flex;
+}
+.users header .content img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.users header .details{
+    margin-left: 15px;
+}
+.users header .details{
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.users header .details span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #b4b1b1;
+}
+.users header .logout{
+    color: #fff;
+    background: #333;
+    font-size: 17px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
