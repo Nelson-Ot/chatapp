@@ -11,46 +11,42 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #f5f5f5;
+    background: #0e0a0a;
     
 }
 .wrapper{
     width: 100%;
     max-width: 600px;
-    background: #fff;
+    background: #191919;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(40, 6, 235, 0.911);
 }
 /* sign up form css code */
 .form{
     padding: 25px 30px;
+    color: white;
 }
 .form header{
     font-size: 25px;
     font-weight: 600;
     padding-bottom: 10px;
     border-bottom: 1px solid #6666;
+    color: white;
 }
 .form form{
     margin: 20px 0;
 }
 .form form .err-txt{
-    color: red;
+    color: fff;
     font-size: 12px;
     font-weight: 600;
     margin-bottom: 10px;
-    background-color: #e66969;
+    background-color: #fa2a2a;
     padding: 8px 10px;
     text-align: center;
     border-radius: 5px;
     text-transform: capitalize;
-}
-.form form .name-details{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
 }
 .form form .field{
     display: flex;
@@ -69,12 +65,18 @@ body{
 .form form .field input{
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 0;
+    border-bottom: 2px solid #2845ec;
+    background: none;
+    border-radius: 24px;
     font-size: 14px;
     font-weight: 600;
-    color: #333;
+    color: #fff;
     outline: none;
+    transition: 0.25s;
+}
+.form form .field input:focus{
+    border-color: #fa2a2a;
 }
 .form form .image input{
     font-size: 17px;
@@ -85,9 +87,9 @@ body{
     border: none;
     font-size: 17px;
     font-weight: 400;
-    background: #333;
+    background: #2845ec;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
 }
 .form .link{
@@ -131,13 +133,215 @@ body{
 .users header .details span{
     font-size: 18px;
     font-weight: 500;
-    color: #b4b1b1;
+    color: #fff;
+
+}
+.users header .details p{
+    color: #2845ec;
 }
 .users header .logout{
     color: #fff;
-    background: #333;
+    background: #2845ec;
     font-size: 17px;
     padding: 7px 15px;
     border-radius: 5px;
     cursor: pointer;
+}
+.users .search{
+    margin: 20px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.users .search .text{
+    font-size: 18px;
+    color: #2845ec;
+}
+.users .search input{
+    position: absolute;
+    height: 43px;
+    width: calc(100% - 40px);
+    border: none;
+    border-bottom: 2px solid #2845ec;
+    /* background: none; */
+    font-size: 16px;
+    outline: none;
+    color: #2845ec;
+    padding: 0 13px;
+    border-radius: 24px;
+    /* position: absolute;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-bottom: 2px solid #2845ec;
+    background: none;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s; 
+     */
+}
+.users .search input:focus{
+    border-color: #fa2a2a;
+}
+.users .search button{
+    width: 47px;
+    height: 42px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #2845ec;
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+.users-list{
+    max-height: 350px;
+    overflow-y: auto;
+
+}
+.users-list::-webkit-scrollbar{
+    width: 10px;
+}
+.users-list a{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid #b4b1b1;
+    padding-right: 15px;
+    page-break-after: 10px;
+    border-bottom-color: #f1f1f1;
+
+}
+.users-list a .content{
+    display: flex;
+    align-items: center;
+}
+.users-list a .content img{
+    height: 40px;
+    width: 40px;
+}
+.users-list a .content .details{
+    margin-left: 15px;
+}
+.users-list a .content .details p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #556cf1;
+}
+.users-list a .status-dot{
+    font-size: 12px;
+    color: rgb(34, 12, 233);
+}
+/* offline class will be activated usng javascript and php */
+.users-list a .status-dot.offline{
+    color: #fa2a2a;
+}
+
+/* chat area */
+.chat-area header{
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+
+}
+.chat-area header .back-icon{
+    font-size: 18px;
+    color: #fa2a2a;
+}
+.chat-area header img{
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+}
+.chat-area header span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #2845ec;
+}
+.chat-area header p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #5a70ee;
+}
+.chat-box{
+    height: 500px;
+    overflow-y: auto;
+    padding: 10px 20px 30px 20px;
+    background: #272727;
+}
+.chat-box::-webkit-scrollbar{
+    width: 10px;
+}
+.chat-box .chat{
+     margin: 15px 0;
+}
+.chat-box .chat p{
+    padding: 8px 16px;
+    word-wrap: break-word;
+}
+.chat-box .outgoing{
+    display: flex;
+    
+}
+.outgoing .details{
+    margin-left: auto;
+    max-width: calc(100% - 60px);
+}
+.outgoing .details p{
+    background: #333;
+    color: #556cf1;
+    border-radius: 18px 18px 0 18px;
+}
+.chat-box .incoming{
+    display: flex;
+    align-items: flex-end;
+}
+.chat-box .incoming img{
+    height: 35px;
+    width: 35px;
+    margin-right: 15px;
+}
+.incoming .details{
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: calc(100% - 160px);
+}
+.chat-box .incoming .details p{
+    background: #5a70ee;
+    color: #fff;
+    border-radius: 18px 18px 18px 0;
+}
+.typing-area{
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.typing-area input{
+    height: 45px;
+    width: calc(100% - 60px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 7px;
+    outline: none;
+    
+}
+.typing-area button{
+    width: 47px;
+    height: 42px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #2845ec;
+    font-size: 17px;
+    font-weight: 500;
 }
