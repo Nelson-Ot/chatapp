@@ -15,21 +15,21 @@
     <div class="wrapper">
         <section class="form signup">
             <header>chat application system</header>
-            <form action="" method="post">
-                <div class="err-txt">this is an error message!</div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="err-txt"></div>
                
                     <div class="field">
                         
-                        <input type="text" name="firstname" id="firstname" placeholder="first name" required>
+                        <input type="text" name="fname" id="firstname" placeholder="first name" required>
                     </div>
                     <div class="field">
                         
-                        <input type="text" name="lastname" id="lastname" placeholder="last name" required>
+                        <input type="text" name="lname" id="lastname" placeholder="last name" required>
                     </div>
                 
                 <div class="field">
                     
-                    <input type="email" name="email" id="email" placeholder="email" required>
+                    <input type="email" name="email" id="email" placeholder="email">
                 </div>
                 <div class="field">
                     
@@ -39,18 +39,19 @@
                 </div>
                 <div class="field image">
                     <label for="image">image</label>
-                    <input type="file" name="img" id="image" required>
+                    <input type="file" name="image" id="image" required>
                 </div>
 
                 <div class="field button">
                     <input type="submit" name="submit" value="Continue to Chat">
                 </div>
             </form>
-            <div class="link">Already signed up? <a href="login.html">Login now</a></div>
+            <div class="link">Already signed up? <a href="login.php">Login now</a></div>
         </section>
     </div>
 
     <script src="js/show-hide-password.js"></script>
+    <script src="js/sign-up.js"></script>
 </body>
 
 </html>

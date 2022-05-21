@@ -16,7 +16,7 @@
         <section class="form login">
             <header>chat application system</header>
             <form action="" method="post">
-                <div class="err-txt">this is an error message!</div>
+                <div class="err-txt"></div>
                
                 <div class="field">
                    
@@ -33,11 +33,12 @@
                     <input type="submit" name="submit" value="Continue to Chat">
                 </div>
             </form>
-            <div class="link">Not yet signed in? <a href="index.html">Register now</a></div>
+            <div class="link">Not yet signed in? <a href="index.php">Register now</a></div>
         </section>
     </div>
 
     <script src="js/show-hide-password.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
