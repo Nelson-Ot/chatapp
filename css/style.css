@@ -62,6 +62,11 @@ body{
   cursor: pointer;
   transform: translateY(-50%);
 }
+.form form .field i.active::before{
+    content: "\f0a7";
+    color: #ccc;
+     font-size: 20px;
+}
 .form form .field input{
     width: 100%;
     padding: 10px;
@@ -153,10 +158,14 @@ body{
     position: relative;
     align-items: center;
     justify-content: space-between;
+    
 }
 .users .search .text{
     font-size: 18px;
     color: #2845ec;
+}
+.users .search .text.active{
+    opacity: 0;
 }
 .users .search input{
     position: absolute;
@@ -164,27 +173,20 @@ body{
     width: calc(100% - 40px);
     border: none;
     border-bottom: 2px solid #2845ec;
-    /* background: none; */
+    background: none; 
     font-size: 16px;
     outline: none;
     color: #2845ec;
     padding: 0 13px;
     border-radius: 24px;
-    /* position: absolute;
-    width: 100%;
-    padding: 10px;
-    border: 0;
-    border-bottom: 2px solid #2845ec;
-    background: none;
-    border-radius: 24px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    outline: none;
+    border-bottom: 2px solid #ec2828;
     opacity: 0;
     pointer-events: none;
-    transition: 0.25s; 
-     */
+    transition: all 0.3s ease-in-out;
+}
+.users .search input.active{
+    opacity: 1;
+    pointer-events: all;
 }
 .users .search input:focus{
     border-color: #fa2a2a;
