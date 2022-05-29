@@ -8,6 +8,7 @@
     include_once 'header.php';
 
  ?>
+
 <body>
     <div class="wrapper">
         <section class="users">
@@ -26,7 +27,7 @@
                     </div>
 
                 </div>
-                <a href="" class="logout">Logout</a>
+                <a href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Logout</a>
             </header>
             <div class="search">
                 <span class="text">select a user to chat with</span>
@@ -34,7 +35,7 @@
                 <button title="search"><i class="fas fa-search"></i></button>
             </div>
             <div class="users-list">
-                <a href="#">
+                <!-- <a href="#">
                     <div class="content">
                         <img src="profileimage/4440ee28b1bcaecb743f18751432b603.jpg" alt="profile image">
                         <div class="details">
@@ -45,119 +46,7 @@
                     <div class="status-dot">
                         <i class="fas fa-circle"></i>
                     </div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="profileimage/4440ee28b1bcaecb743f18751432b603.jpg" alt="profile image">
-                        <div class="details">
-                            <span>Baby Serah</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </a><a href="#">
-                    <div class="content">
-                        <img src="profileimage/4440ee28b1bcaecb743f18751432b603.jpg" alt="profile image">
-                        <div class="details">
-                            <span>Baby Serah</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </a><a href="#">
-                    <div class="content">
-                        <img src="profileimage/4440ee28b1bcaecb743f18751432b603.jpg" alt="profile image">
-                        <div class="details">
-                            <span>Baby Serah</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </a><a href="#">
-                    <div class="content">
-                        <img src="profileimage/4440ee28b1bcaecb743f18751432b603.jpg" alt="profile image">
-                        <div class="details">
-                            <span>Baby Serah</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </a><a href="#">
-                    <div class="content">
-                        <img src="profileimage/4440ee28b1bcaecb743f18751432b603.jpg" alt="profile image">
-                        <div class="details">
-                            <span>Baby Serah</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </a><a href="#">
-                    <div class="content">
-                        <img src="profileimage/4440ee28b1bcaecb743f18751432b603.jpg" alt="profile image">
-                        <div class="details">
-                            <span>Baby Serah</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </a><a href="#">
-                    <div class="content">
-                        <img src="profileimage/4440ee28b1bcaecb743f18751432b603.jpg" alt="profile image">
-                        <div class="details">
-                            <span>Baby Serah</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </a><a href="#">
-                    <div class="content">
-                        <img src="profileimage/4440ee28b1bcaecb743f18751432b603.jpg" alt="profile image">
-                        <div class="details">
-                            <span>Baby Serah</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </a><a href="#">
-                    <div class="content">
-                        <img src="profileimage/4440ee28b1bcaecb743f18751432b603.jpg" alt="profile image">
-                        <div class="details">
-                            <span>Baby Serah</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="profileimage/4440ee28b1bcaecb743f18751432b603.jpg" alt="profile image">
-                        <div class="details">
-                            <span>Baby Serah</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                </a>
+                </a> -->
             </div>
         </section>
     </div>
